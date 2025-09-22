@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date:21.09.2025
+## Register Number:25010044
+## Name:Pavan Kalyan. P
 ## Problem Title
 SIH 25010: Smart Crop Advisory System for Small and Marginal Farmers
 ## Problem Description
@@ -41,27 +41,23 @@ Government of Punjab
 Agriculture, FoodTech & Rural Development
 
 ## Proposed Solution
-<h3>Remove These Lines</h3>
-<ul><li>Detailed explanation of the proposed solution</li>
-<li>How it addresses the problem</li>
-<li>Innovation and uniqueness of the solution</li></ul>
+It starts with farm registration and profile management, wherein information like name, landhold, location-based GPS-based coordinates, soil type, crop history, and language choice are stored in a safe manner. Registered, the process of collecting data and integrating is made simple by importing location-based weather data from APIs such as OpenWeather and IMD feeds, soil data from IoT sensors or government soil health cards, and market price data from APMC portals and government websites.
+At the center is the crop suggestion and input engine that uses AI/ML algorithms to offer appropriate crops based on season, climate, and soil. It also gives accurate fertilizer and pesticide recommendations, including organic fertilizer and pesticide recommendations, and creates irrigation schedules by utilizing a combination of weather forecast and soil water level. For convenience, the support advisory system provides support through a multilingual chat interface with text and voice interfaces, native-language speech-to-text and text-to-speech functionality, and escalation to human experts in case farmers need more assistance.
+The system also includes a pest and disease identification module, where farmers can upload photos of crops that are scanned through computer vision models (CNNs developed using TensorFlow or PyTorch and OpenCV). Based on the diagnosis, the system prescribes remedies that are either organic or chemical. This is complemented by warnings and notifications, which send timely warnings of weather activities like rainfall, drought, or frost, indicating outbreaks of pests and fluctuations in market prices. Lastly, a learning and feedback loop enables farmers to score the value of the advice, and that information is taken back into the ML algorithms to get more accurate and personalized with time.
+
 
 ## Technical Approach
-<h3>Remove These Lines</h3>
-<ul><li>Technologies to be used (e.g. programming languages, frameworks, hardware)
-</li>
-<li>Methodology and process for implementation <b>(Flow Charts/Images/ working prototype)</b></li></ul>
+Technically, the application will be developed on React Native or Flutter as the mobile client, with Python (FastAPI or Django REST Framework) and Node.js being the backend to integrate with chatbots. The data will be stored with PostgreSQL for time-series crop and farmer data and MongoDB for weather and sensor data. AI/ML layer will employ TensorFlow, PyTorch, and Scikit-learn for yield estimation, pest detection, and crop recommendation. IoT integration will be done through MQTT brokers such as Mosquitto and LoRaWAN/GSM modules for remote area connection. For language and chatbot support, technologies like Rasa or Dialogflow will be utilized, and Google Speech-to-Text and Text-to-Speech APIs for voice. The whole system will be deployed on cloud scalable platforms like AWS, Azure, or GCP.
+
+The logical flow of the system starts with farmer registration, location, soil, weather, and market data capture. This is passed on to the crop recommendation engine, which responds accordingly in terms of advisory via mobile app, SMS/IVR for low-literacy farmers, or human experts in the event of escalation. The subsequent steps are detection of pest and disease, alerts and notifications, feedback from the farmer and data logging, and retraining of ML model for ongoing improvement.
+
 
 ## Feasibility and Viability
-<h3>Remove These Lines</h3>
-<ul><li>Analysis of the feasibility of the idea</li>
-<li>Potential challenges and risks</li>
-<li>Strategies for overcoming these challenges</li></ul>
+In the feasibility aspect, the solution is viable as it uses established open-source platforms, cost-effective cloud infrastructure, and inexpensive IoT kits. The biggest challenges are connectivity gap, digital literacy barrier, and sensor maintenance. These can be addressed by offline-first app architecture, SMS/IVR fallback mechanisms, and sensor maintenance support from local cooperatives.
 
 ## Impact and Benefits
-<h3>Remove These Lines</h3>
-<ul><li>Potential impact on the target audience</li>
-<li>Benefits of the solution (social, economic, environmental, etc.)</li></ul>
+The advantages are enormous: the farmers will realize a 20–30% increase in their overall yield, lower input costs in terms of reduced consumption of fertilizer and pesticides, ease through advisory in local languages, and long-term environmental stability through precision farming methods.
+
 
 ## Research and References
 <h3>Remove These Lines</h3>
