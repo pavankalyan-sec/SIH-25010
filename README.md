@@ -51,7 +51,7 @@ The system also includes a pest and disease identification module, where farmers
 
 <p>The logical flow of the system starts with farmer registration, location, soil, weather, and market data capture. This is passed on to the crop recommendation engine, which responds accordingly in terms of advisory via mobile app, SMS/IVR for low-literacy farmers, or human experts in the event of escalation. The subsequent steps are detection of pest and disease, alerts and notifications, feedback from the farmer and data logging, and retraining of ML model for ongoing improvement.</p>
 
-![alt text](<flowchart.jpeg>)
+![alt text](<flowchart2.jpeg>)
 
 ## Feasibility and Viability
 In the feasibility aspect, the solution is viable as it uses established open-source platforms, cost-effective cloud infrastructures. The biggest challenges are connectivity gap, digital literacy barrier, and sensor maintenance. These can be addressed by offline-first app architecture, SMS/IVR fallback mechanisms, and sensor maintenance support from local cooperatives.
